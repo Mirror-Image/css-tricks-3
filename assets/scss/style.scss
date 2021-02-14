@@ -120,8 +120,14 @@ a {
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   filter: url(#gooey);
+}
+
+.satisfying {
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .container .circle {
@@ -190,4 +196,45 @@ a {
 svg {
   width: 0;
   height: 0;
+}
+
+// Gradient button
+.buttons {
+  justify-content: space-around;
+}
+
+.btn {
+  min-width: 200px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px #000000;
+  padding: 20px;
+  border-radius: 15px;
+  background-size: 220%;
+  box-shadow: 0 5px 5px -5px #010101;
+  transition: .5s ease;
+
+  &-1 {
+    background-image: linear-gradient(45deg, #ed1e79, #662d8c, #ed1e79);
+  }
+
+  &-2 {
+    background-image: linear-gradient(45deg, #63e2ff, #d585ff, #63e2ff);
+  }
+
+  &-3 {
+    background-image: linear-gradient(45deg, #fcee21, #009e00, #fcee21);
+  }
+
+  &-4 {
+    background-image: linear-gradient(45deg, #fbb03b, #d4145a, #fbb03b);
+  }
+
+  &:hover {
+    background-position: right;
+  }
 }

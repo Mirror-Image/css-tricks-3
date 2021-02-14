@@ -211,11 +211,23 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: url(#gooey);
+          filter: url(#gooey);
+}
+
+.satisfying {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-filter: url(#gooey);
-          filter: url(#gooey);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .container .circle {
@@ -327,4 +339,52 @@ a {
 svg {
   width: 0;
   height: 0;
+}
+
+.buttons {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn {
+  min-width: 200px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px #000000;
+  padding: 20px;
+  border-radius: 15px;
+  background-size: 220%;
+  -webkit-box-shadow: 0 5px 5px -5px #010101;
+          box-shadow: 0 5px 5px -5px #010101;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.btn-1 {
+  background-image: -o-linear-gradient(45deg, #ed1e79, #662d8c, #ed1e79);
+  background-image: linear-gradient(45deg, #ed1e79, #662d8c, #ed1e79);
+}
+
+.btn-2 {
+  background-image: -o-linear-gradient(45deg, #63e2ff, #d585ff, #63e2ff);
+  background-image: linear-gradient(45deg, #63e2ff, #d585ff, #63e2ff);
+}
+
+.btn-3 {
+  background-image: -o-linear-gradient(45deg, #fcee21, #009e00, #fcee21);
+  background-image: linear-gradient(45deg, #fcee21, #009e00, #fcee21);
+}
+
+.btn-4 {
+  background-image: -o-linear-gradient(45deg, #fbb03b, #d4145a, #fbb03b);
+  background-image: linear-gradient(45deg, #fbb03b, #d4145a, #fbb03b);
+}
+
+.btn:hover {
+  background-position: right;
 }
