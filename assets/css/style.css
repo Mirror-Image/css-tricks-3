@@ -388,3 +388,35 @@ svg {
 .btn:hover {
   background-position: right;
 }
+
+:root {
+  --blue: #3b7ded;
+  --green: #2ba24c;
+  --yellow: #f0b501;
+  --red: #e43e2b;
+}
+
+.google {
+  width: 180px;
+  height: 200px;
+  position: relative;
+  border-top: 50px solid var(--blue);
+  border-right: 50px solid var(--blue);
+  border-bottom: 50px solid var(--blue);
+  border-radius: 0 0 175px 0;
+}
+
+.google::before {
+  display: block;
+  content: '';
+  width: 250px;
+  height: 250px;
+  border-top: 50px solid var(--red);
+  border-bottom: 50px solid var(--green);
+  border-left: 50px solid var(--yellow);
+  border-right: 50px solid transparent;
+  border-radius: 200px;
+  position: absolute;
+  top: -200px;
+  right: -50px;
+}
