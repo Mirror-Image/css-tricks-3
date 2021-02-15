@@ -420,3 +420,40 @@ svg {
   top: -200px;
   right: -50px;
 }
+
+.error__box {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.error__box h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25vh;
+  line-height: 1;
+  -webkit-animation: light 4s steps(1) infinite;
+          animation: light 4s steps(1) infinite;
+}
+
+.error__box h2 p {
+  font-size: 3vh;
+}
+
+@-webkit-keyframes light {
+  33% {
+    text-shadow: 0 0 20px #e900fe;
+  }
+  66% {
+    text-shadow: 0 0 20px #6de33c;
+  }
+}
+
+@keyframes light {
+  33% {
+    text-shadow: 0 0 20px #e900fe;
+  }
+  66% {
+    text-shadow: 0 0 20px #6de33c;
+  }
+}

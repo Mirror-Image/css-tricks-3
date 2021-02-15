@@ -271,3 +271,33 @@ svg {
   top: -200px;
   right: -50px;
 }
+
+// 404 Error page
+.error__box {
+  // display: flex;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+
+  h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 25vh;
+    line-height: 1;
+    animation: light 4s steps(1) infinite;
+
+    p {
+      font-size: 3vh;
+      ;
+    }
+  }
+}
+
+@keyframes light {
+  33% {
+    text-shadow: 0 0 20px #e900fe;
+  }
+  66% {
+    text-shadow: 0 0 20px #6de33c;
+  }
+}
